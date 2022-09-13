@@ -33,7 +33,7 @@ export default class Products extends Component {
   };
 
   render() {
-    const { title, thumbnail, price, id, avlQnt } = this.props;
+    const { title, thumbnail, price, id, avlQnt, frete } = this.props;
     return (
       <>
         <Link to={ `/DetailedProduct/${id}` } data-testid="product-detail-link">
@@ -54,6 +54,11 @@ export default class Products extends Component {
               {' '}
               {price}
             </p>
+            {
+              frete && (
+                <p data-testid="free-shipping">Frete Grátis</p>
+              )
+            }
           </div>
         </Link>
         <button
@@ -76,4 +81,5 @@ Products.propTypes = {
   price: PropTypes.number.isRequired,
   handleCartSize: PropTypes.func.isRequired,
   avlQnt: PropTypes.number.isRequired,
+  frete: PropTypes.bool.isRequired,
 };

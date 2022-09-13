@@ -128,6 +128,11 @@ export default class DetailedProduct extends Component {
               alt={ elemento.title }
             />
             <p data-testid="product-detail-price">{elemento.price}</p>
+            {
+              elemento.shipping.free_shipping && (
+                <p data-testid="free-shipping">Frete Grátis</p>
+              )
+            }
           </div>
         ))}
         <button
