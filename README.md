@@ -1,4 +1,4 @@
-# Projeto 10 - TrybeTunes
+# Projeto 11 - Front End Online Store
 
 Oi. Este foi um dos projetos que eu fiz durante meu curso na Trybe. Confira os detalhes dele abaixo.
 
@@ -6,7 +6,8 @@ Oi. Este foi um dos projetos que eu fiz durante meu curso na Trybe. Confira os d
 
 
 ## Nome do Projeto
-TrybeTunes (Aplicativo de Música)
+Front End Online Store (Loja Online Front End)
+
 ## Linguagens e Ferramentas Utilizadas
 
  - JavaScript
@@ -16,41 +17,48 @@ TrybeTunes (Aplicativo de Música)
 
 
 ## Objetivos do Projeto
-Neste projeto foi desenvolvido uma aplicação que consome uma API de músicas. A aplicação permite aos usuários buscar músicas, bandas, albuns e artistas variados, reproduzir faixas, criar lista de músicas favoritas, editar o perfil da pessoa logada, entre outras atividades. O intuito desse projeto foi colocar em prática as habilidades adquiridas acerca do React Router, a ferramenta que auxilia a gestão de páginas com a biblioteca React.
+"Neste projeto foi criada uma versão simplificada, sem persistência no banco de dados, de uma loja online, desenvolvidas em grupo suas funcionalidades de acordo com demandas definidas em um quadro Kanban, em um cenário próximo ao do mercado de trabalho." (Trecho retirado do README do projeto da Trybe).
+A aplicação consome uma [API do Mercado Livre](https://developers.mercadolibre.com/), e monta um MarketPlace online, no qual é possível navegar pelos produtos e adicioná-los ao carrinho. O intuito desse projeto foi, principalmente, desenvolver a prática de desenvolvimento em grupo, utilizando a mentalidade de metodologias ágeis (como o Kanban), e aplicando os conhecimentos de React adquiridos. 
 
 <br/>
 Abaixo estão capturas de tela do projeto (vale lembrar que o objetivo principal do projeto era desenvolver a aplicação com foco na arquitetura do site utilizando React Router, e, por isso, não foi desenvolvido o CSS, portanto a aplicação está sem estilização".
 <br/>
 
 <br/>
-Página Inicial, feito o Login, carregando e passando para página de busca:
+Página Inicial, com uma aba de categorias, um local para buscas e um link para o carrinho:
 
-![Screenshot Login para Search](screenshot-login-search.gif)
-
-<br/>
-Página de busca atualizando com albums encontrados:
-
-![Screenshot Search para resultados](screenshot-search-albums.gif)
-
+![Screenshot Inicial](screenshot1.png)
 
 <br/>
-Clicando em um resultado e redirecionado para a página do álbum:
+Na página inicial, ao clicar em uma categoria, os produtos disponíveis são dispostos abaixo (no caso, alimentos e bebidas):
 
-![Screenshot redirecionado para álbum](screenshot-click-result.gif)
+![Screenshot Categoria](screenshot2.gif)
 
-<br/>
-Página de músicas favoritadas:
-
-![Screenshot favoritas](screenshot-favorites.png)
 
 <br/>
-Página de perfil:
+Na página inicial, ao buscar algum termo, os produtos encontrados são dispostos abaixo (no caso, a busca foi "brinquedo"):
 
-![Screenshot perfil](screenshot-profile.png)
+![Screenshot Busca](screenshot3.gif)
+
+<br/>
+Ao clicar em um item, é direcionado para a página de detalhes respectiva do produto.
+Na página do produto é possível adicioná-lo ao carrinho, fazer avaliações, e também há um link para a página de carrinho:
+
+![Screenshot detalhes](screenshot4.gif)
+
+<br/>
+Na página de carrinho, é possível alterar as quantidades de cada produto, removê-los, ou clicar no link que redireciona para a finalização da compra:
+
+![Screenshot carrinho](screenshot5.png)
+
+<br/>
+Na página de checkout (finalização), é possível ver um resumo dos produtos que estão sendo comprados, e digitar um formulário para pagamento (inacabado), e, por fim, terminar a compra:
+
+![Screenshot checkout](screenshot6.png)
 
 ## Instruções para visualização
 Comando para clonar o projeto:
- - `git clone git@github.com:BrunoSayago/projeto-10-TrybeTunes.git`
+ - `git clone git@github.com:BrunoSayago/projeto-11-FrontEndOnlineStore.git`
  
 Se necessário, instalar as dependências:
  - `npm install`
