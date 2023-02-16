@@ -6,6 +6,8 @@ import Cart from './pages/Cart';
 import DetailedProduct from './pages/DetailedProduct';
 import Checkout from './components/Checkout';
 
+// Branch de Bruno Sayago (Grupo 16)
+
 class App extends Component {
   render() {
     return (
