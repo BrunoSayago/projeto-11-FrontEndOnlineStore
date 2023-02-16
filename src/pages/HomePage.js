@@ -79,6 +79,9 @@ export default class HomePage extends Component {
           price,
           id,
           available_quantity: avlQnt,
+          shipping: {
+            free_shipping: freteGratis,
+          },
         }) => (
           <div key={ id }>
             <Products
@@ -88,6 +91,7 @@ export default class HomePage extends Component {
               price={ price }
               handleCartSize={ this.handleCartSize }
               avlQnt={ avlQnt }
+              frete={ freteGratis }
             />
           </div>
         )) : 'Nenhum produto foi encontrado'}
